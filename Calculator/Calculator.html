@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         
+         <link rel="stylesheet" href="calculator.css">
+         <script src="calculator.js"></script> 
+    </head>
+
+    <body>
+        <header >            
+        </header>
+        <div class="grid-container">   
+            <img src="label.jpg" id="label">  
+            <label id="inputLabel"></label>
+            <button class="One" type="button" value="1" data-value="1" onclick=concatOne(1) id="One" >1</button> 
+            <button class="Two" value="2" data-value="2"  type="button" onclick="concatTwo(2)" id="Two">2</button>
+            <button class="Three" value="3" data-value="3" type="button" onclick="concatThree(3)" id="Three">3</button>
+            <button class="Four" value="4" data-value="4" type="button" onclick="concatFour(4)" id="Four">4</button>
+            <button class="Five" value="5" data-value="5" type="button" onclick="concatFive(5)" id="five">5</button>
+            <button class="six" value="6" type="button" onclick="concatSix(6)" id="six">6</button>
+            <button class="seven" value="7" type="button" onclick="concatSeven(7)" id="seven">7</button>
+            <button class="eight" value="8" type="button" onclick="concatEight(8)" id="eight">8</button>
+            <button class="nine" value="9" type="button" onclick="concatNine(9)" id="nine">9</button>
+            <button class="zero" value="0" type="button" onclick="concatZero(0)" id="zero">0</button>
+            <button class="plus" type="button" onclick="concatPlus()" id="plus">+</button>
+            <button class="minus" type="button" value="-" onclick="concatMinus()" id="minus">-</button>
+            <button class="divide" type="button" onclick="concatDivide()" id="divide">/</button>
+            <button class="multiply" type="button" onclick="concatMultiply()" id="multiply">*</button>
+            <button class="dot" type="button" id="dot" onclick="concatDot('.')">.</button>
+            <button class="equal" type="button" onclick="concatEqual()" id="equal">=</button>
+            <button class="erase" type="button" onclick="concatErase()" id="erase">C</button>
+            <button class="squareRoot" onclick="squareRoot()" type="button" id="squareRoot">√</button>
+            <button class="square" type="button" onclick="squareEqual()" id="square">x²</button>     
+            <button class="plusMinus" type="button" data-negation="" onclick="plusMinus(-1)" id="plusMinus">+/-</button>        
+        </div>        
+        <footer class="footer" id="footer"> 
+          2022  &copy; Kyrylo Stromeliuk
+        </footer>
+    </body>
+</html>
